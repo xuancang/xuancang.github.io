@@ -1,6 +1,6 @@
 L2Dwidget.init({
 	model: {
-		jsonPath: 'https://www.xuancang.top/wp-content/plugins/live2d/model/live2d-widget-model-hibiki/assets/hibiki.model.json',
+		jsonPath: '/js/live2d/model/live2d-widget-model-hibiki/assets/hibiki.model.json',
     scale: 1,
   },
   display: {
@@ -9,7 +9,7 @@ L2Dwidget.init({
     height: 200,
     position: 'right',
     hOffset: 10,
-    vOffset: -10,
+    vOffset: 10,
   },
   mobile: {
     show: true,
