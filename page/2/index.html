@@ -145,6 +145,519 @@
     
     
     <article
+  id="post-Java的深渊巨坑"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2019/02/26/Java%E7%9A%84%E6%B7%B1%E6%B8%8A%E5%B7%A8%E5%9D%91/"
+    >Java的深渊巨坑P1</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2019/02/26/Java%E7%9A%84%E6%B7%B1%E6%B8%8A%E5%B7%A8%E5%9D%91/" class="article-date">
+  <time datetime="2019-02-26T06:56:58.000Z" itemprop="datePublished">2019-02-26</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>今天四级成绩出来了，身体一阵空虚，什么游戏都懒得玩__(:3 &lt;)_ _ ,不如开个坑，学学夹娃</p>
+<h1 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h1><h2 id="QTMD概念啊"><a href="#QTMD概念啊" class="headerlink" title="QTMD概念啊"></a><del>QTMD概念啊</del></h2><h4 id="夹娃有这么几个组成部分"><a href="#夹娃有这么几个组成部分" class="headerlink" title="夹娃有这么几个组成部分"></a>夹娃有这么几个组成部分</h4><p><li>对象<del>（你没有,对就是你）</del>：对象是类的一个实例，有状态和行为。</p>
+<p><li>类：类是一个模板，它描述一类对象的行为和状态。</p>
+<p><li>方法：方法就是行为，一个类可以有很多方法。逻辑运算、数据修改以及所有动作都是在方法中完成的。</p>
+<p><li>实例变量：每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。</p>
+<h4 id="夹娃有这么几种文件类型"><a href="#夹娃有这么几种文件类型" class="headerlink" title="夹娃有这么几种文件类型"></a>夹娃有这么几种文件类型</h4><p><li>局部变量</p>
+<p><li>类变量（静态变量）</p>
+<p><li>成员变量（非静态变量）</p>
+<h4 id="规范化"><a href="#规范化" class="headerlink" title="规范化"></a>规范化</h4><p>为了以后在项目中不会被别人打死，夹娃对于类名，方法名命名有一定的要求</p>
+<p><li>类名：首字母应当<strong>_大写_</strong>，如果英语学的比较好<del>（活在梦里）</del>，那么在多个单词组成的类名中，每个单词首字母<strong>_大写_</strong>（驼峰命名法）。</p>
+<p><li>方法名：首字母<strong>_小写_</strong>，多个单词时，其他单词首字母<strong>_大写_</strong>。</p>
+<p><li>源文件名：必须与类名相同，否则编译出错<del>（哪个睿智定下的规矩orz）</del>（编译出错我没试过）。</p>
+<h3 id="就酱，开始学习。"><a href="#就酱，开始学习。" class="headerlink" title="就酱，开始学习。"></a>就酱，开始学习。</h3><h5 id="1，主方法入口：所有的Java-程序由public-static-void-main-String-args-方法开始执行。"><a href="#1，主方法入口：所有的Java-程序由public-static-void-main-String-args-方法开始执行。" class="headerlink" title="1，主方法入口：所有的Java 程序由public static void main(String []args)方法开始执行。"></a>1，主方法入口：所有的Java 程序由public static void main(String []args)方法开始执行。</h5><h5 id="2，数组：可以储存任何形式数据（同py）"><a href="#2，数组：可以储存任何形式数据（同py）" class="headerlink" title="2，数组：可以储存任何形式数据（同py）"></a>2，数组：可以储存任何形式数据（同py）</h5><h5 id="3，枚举：夹娃为了防止睿智用户输入非法输入，可以使用枚举限制用户在给出范围内做选择题，举个栗子："><a href="#3，枚举：夹娃为了防止睿智用户输入非法输入，可以使用枚举限制用户在给出范围内做选择题，举个栗子：" class="headerlink" title="3，枚举：夹娃为了防止睿智用户输入非法输入，可以使用枚举限制用户在给出范围内做选择题，举个栗子："></a>3，枚举：夹娃为了防止睿智用户输入非法输入，可以使用枚举限制用户在给出范围内做选择题，举个栗子：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">FreshJuice</span> </span>&#123;</span><br><span class="line">   <span class="class"><span class="keyword">enum</span> <span class="title">FreshJuiceSize</span></span>&#123; SMALL, MEDIUM , LARGE &#125;</span><br><span class="line">   FreshJuiceSize size;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FreshJuiceTest</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span></span>&#123;</span><br><span class="line">      FreshJuice juice = <span class="keyword">new</span> FreshJuice();</span><br><span class="line">      juice.size = FreshJuice.FreshJuiceSize.MEDIUM  ;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="4-关键字（查表叭）"><a href="#4-关键字（查表叭）" class="headerlink" title="4,关键字（查表叭）"></a>4,关键字<del>（查表叭）</del></h5>  <table class="reference">
+<tbody><tr>
+<th>类别</th>
+<th>关键字</th>
+<th>说明</th>
+</tr>
+<tr>
+<td rowspan="3" align="center">访问控制</td>
+<td>private</td>
+<td>私有的</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>受保护的</td>
+</tr>
+<tr>
+<td>public</td>
+<td>公共的</td>
+</tr>
+<tr>
+<td rowspan="13" align="center">类、方法和变量修饰符</td>
+<td>abstract</td>
+<td>声明抽象</td>
+</tr>
+<tr>
+<td>class</td>
+<td>类</td>
+</tr>
+<tr>
+<td>extends</td>
+<td>扩充,继承</td>
+</tr>
+<tr>
+<td>final</td>
+<td>最终值,不可改变的</td>
+</tr>
+<tr>
+<td>implements</td>
+<td>实现（接口）</td>
+</tr>
+<tr>
+<td>interface</td>
+<td>接口</td>
+</tr>
+<tr>
+<td>native</td>
+<td>本地，原生方法（非Java实现）</td>
+</tr>
+<tr>
+<td>new</td>
+<td>新,创建</td>
+</tr>
+<tr>
+<td>static</td>
+<td>静态</td>
+</tr>
+<tr>
+<td>strictfp</td>
+<td>严格,精准</td>
+</tr>
+<tr>
+<td>synchronized</td>
+<td>线程,同步</td>
+</tr>
+<tr>
+<td>transient</td>
+<td>短暂</td>
+</tr>
+<tr>
+<td>volatile</td>
+<td>易失</td>
+</tr>
+<tr>
+<td rowspan="12" align="center">程序控制语句</td>
+<td>break</td>
+<td>跳出循环</td>
+</tr>
+<tr>
+<td>case</td>
+<td>定义一个值以供switch选择</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>继续</td>
+</tr>
+<tr>
+<td>default</td>
+<td>默认</td>
+</tr>
+<tr>
+<td>do</td>
+<td>运行</td>
+</tr>
+<tr>
+<td>else</td>
+<td>否则</td>
+</tr>
+<tr>
+<td>for</td>
+<td>循环</td>
+</tr>
+<tr>
+<td>if</td>
+<td>如果</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>实例</td>
+</tr>
+<tr>
+<td>return</td>
+<td>返回</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>根据值选择执行</td>
+</tr>
+<tr>
+<td>while</td>
+<td>循环</td>
+</tr>
+<tr>
+<td rowspan="6" align="center">错误处理</td>
+<td>assert</td>
+<td>断言表达式是否为真</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>捕捉异常</td>
+</tr>
+<tr>
+<td>finally</td>
+<td>有没有异常都执行</td>
+</tr>
+<tr>
+<td>throw</td>
+<td>抛出一个异常对象</td>
+</tr>
+<tr>
+<td>throws</td>
+<td>声明一个异常可能被抛出</td>
+</tr>
+<tr>
+<td>try</td>
+<td>捕获异常</td>
+</tr>
+<tr>
+<td rowspan="2" align="center">包相关</td>
+<td>import</td>
+<td>引入</td>
+</tr>
+<tr>
+<td>package</td>
+<td>包</td>
+</tr>
+<tr>
+<td rowspan="8" align="center">基本类型</td>
+<td>boolean</td>
+<td>布尔型</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>字节型</td>
+</tr>
+<tr>
+<td>char</td>
+<td>字符型</td>
+</tr>
+<tr>
+<td>double</td>
+<td>双精度浮点</td>
+</tr>
+<tr>
+<td>float</td>
+<td>单精度浮点</td>
+</tr>
+<tr>
+<td>int</td>
+<td>整型</td>
+</tr>
+<tr>
+<td>long</td>
+<td>长整型</td>
+</tr>
+<tr>
+<td>short</td>
+<td>短整型</td>
+</tr>
+
+<tr>
+<td rowspan="3" align="center">变量引用</td>
+<td>super</td>
+<td>父类,超类</td>
+</tr>
+<tr>
+<td>this</td>
+<td>本类</td>
+</tr>
+<tr>
+<td>void</td>
+<td>无返回值</td>
+</tr>
+<tr>
+<td rowspan="3" align="center">保留关键字</td>
+<td>goto</td>
+<td>是关键字，但不能使用</td>
+</tr>
+<tr>
+<td>const</td>
+<td>是关键字，但不能使用</td>
+</tr>
+<tr>
+<td>null</td>
+<td>空</td>
+</tr>
+</tbody></table>
+
+
+<h5 id="5，注释"><a href="#5，注释" class="headerlink" title="5，注释"></a>5，注释</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">   <span class="comment">/* 这是第一个Java程序</span></span><br><span class="line"><span class="comment">    *它将打印Hello World</span></span><br><span class="line"><span class="comment">    * 这是一个多行注释的示例</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span></span>&#123;</span><br><span class="line">       <span class="comment">// 这是单行注释的示例</span></span><br><span class="line">       <span class="comment">/* 这个也是单行注释的示例 */</span></span><br><span class="line">       System.out.println(<span class="string">&quot;Hello World&quot;</span>); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="6-继承（看不透）"><a href="#6-继承（看不透）" class="headerlink" title="6,继承（看不透）"></a>6,继承<del>（看不透）</del></h5><p>被继承的类称为超类（super class），派生类称为子类（subclass）。</p>
+<h5 id="7，变量类型（和c艹一个样子）"><a href="#7，变量类型（和c艹一个样子）" class="headerlink" title="7，变量类型（和c艹一个样子）"></a>7，变量类型（和c艹一个样子）</h5><p><li>局部变量：在方法、构造方法或者语句块中定义的变量被称为局部变量。变量声明和初始化都是在方法中，方法结束后，变量就会自动销毁。</p>
+<p><li>成员变量：成员变量是定义在类中，方法体之外的变量。这种变量在创建对象的时候实例化。成员变量可以被类中方法、构造方法和特定类的语句块访问。</p>
+<p><li>类变量：类变量也声明在类中，方法体之外，但必须声明为static类型。</p>
+<p>构造方法：和c艹一样</p>
+<h5 id="8，源文件规则"><a href="#8，源文件规则" class="headerlink" title="8，源文件规则"></a>8，源文件规则</h5><p><li>一个源文件只能有一个public类和任意个非public类，且源文件名应与public类名一致</p>
+<p><li>如果一个类定义在某个包中，那么package语句应该在源文件的首行。</p>
+<p><li>如果源文件包含import语句，那么应该放在package语句和类定义之间。如果没有package语句，那么import语句应该在源文件中最前面。</p>
+<p>import语句和package语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。</p>
+<h5 id="9，import语句"><a href="#9，import语句" class="headerlink" title="9，import语句"></a>9，import语句</h5><p>就是py的import，举个栗子</p>
+<pre><code>import java.io.*
+</code></pre><h5 id="10-夹娃数据类型"><a href="#10-夹娃数据类型" class="headerlink" title="10,夹娃数据类型"></a>10,夹娃数据类型</h5><p><del>wdnmd怎么比c还复杂</del><br>  <p>Java语言提供了八种基本类型。六种数字类型（四个整数型，两个浮点型），一种字符类型，还有一种布尔型。 </p></p>
+<p><p><strong>byte：</strong></p></p>
+<p><ul>
+    <li>
+        byte 数据类型是8位、有符号的，以二进制补码表示的整数；</li>
+    <li>
+        最小值是 <span class="marked">-128（-2^7）</span>；</li>
+    <li>
+        最大值是 <span class="marked">127（2^7-1）</span>；</li>
+    <li>
+        默认值是 <span class="marked">0</span>；</li>
+    <li>
+        byte 类型用在大型数组中节约空间，主要代替整数，因为 byte 变量占用的空间只有 int 类型的四分之一；</li>
+    <li>
+        例子：byte a = 100，byte b = -50。</li>
+</ul></p>
+<p><p><strong>short：</strong></p></p>
+<p><ul>
+    <li>
+        short 数据类型是 16 位、有符号的以二进制补码表示的整数</li>
+    <li>
+        最小值是 <span class="marked">-32768（-2^15）</span>；</li>
+    <li>
+        最大值是 <span class="marked">32767（2^15 - 1）</span>；</li>
+    <li>
+        Short 数据类型也可以像 byte 那样节省空间。一个short变量是int型变量所占空间的二分之一；</li>
+    <li>
+        默认值是 <span class="marked">0</span>；</li>
+    <li>
+        例子：short s = 1000，short r = -20000。</li>
+</ul></p>
+<p><p><strong>int：</strong></p></p>
+<p><ul>
+    <li>
+        int 数据类型是32位、有符号的以二进制补码表示的整数；</li>
+    <li>
+        最小值是 <span class="marked">-2,147,483,648（-2^31）</span>；</li>
+    <li>
+        最大值是 <span class="marked">2,147,483,647（2^31 - 1）</span>；</li>
+    <li>
+        一般地整型变量默认为 int 类型；</li>
+    <li>
+        默认值是 <span class="marked">0</span> ；</li>
+    <li>
+        例子：int a = 100000, int b = -200000。</li>
+</ul></p>
+<p><p><strong>long：</strong></p></p>
+<p><ul>
+    <li>
+        long 数据类型是 64 位、有符号的以二进制补码表示的整数；</li>
+    <li>
+        最小值是 <span class="marked">-9,223,372,036,854,775,808（-2^63）</span>；</li>
+    <li>
+        最大值是 <span class="marked">9,223,372,036,854,775,807（2^63 -1）</span>；</li>
+    <li>
+        这种类型主要使用在需要比较大整数的系统上；</li>
+    <li>
+        默认值是 <span class="marked">0L</span>；</li>
+    <li>
+        例子： long a = 100000L，Long b = -200000L。<br>
+"L"理论上不分大小写，但是若写成"l"容易与数字"1"混淆，不容易分辩。所以最好大写。
+</li>
+</ul></p>
+<p><p><strong>float：</strong></p></p>
+<p><ul>
+    <li>
+        float 数据类型是单精度、32位、符合IEEE 754标准的浮点数；</li>
+    <li>
+        float 在储存大型浮点数组的时候可节省内存空间；</li>
+    <li>
+        默认值是 <span class="marked">0.0f</span>；</li>
+    <li>
+        浮点数不能用来表示精确的值，如货币；</li>
+    <li>
+        例子：float f1 = 234.5f。</li>
+</ul></p>
+<p><p><strong>double：</strong></p></p>
+<p><ul>
+    <li>
+        double 数据类型是双精度、64 位、符合IEEE 754标准的浮点数；</li>
+    <li>
+        浮点数的默认类型为double类型；</li>
+    <li>
+        double类型同样不能表示精确的值，如货币；</li>
+    <li>
+        默认值是 <span class="marked">0.0d</span>；</li>
+    <li>
+        例子：double d1 = 123.4。</li>
+</ul></p>
+<p><p><strong>boolean：</strong></p></p>
+<p><ul>
+    <li>
+        boolean数据类型表示一位的信息；</li>
+    <li>
+        只有两个取值：true 和 false；</li>
+    <li>
+        这种类型只作为一种标志来记录 true/false 情况；</li>
+    <li>
+        默认值是 <span class="marked">false</span>；</li>
+    <li>
+        例子：boolean one = true。</li>
+</ul></p>
+<p><p><strong>char：</strong></p></p>
+<p><ul>
+    <li>
+        char类型是一个单一的 16 位 Unicode 字符；</li>
+    <li>
+        最小值是 <span class="marked">\u0000</span>（即为0）；</li>
+    <li>
+        最大值是 <span class="marked">\uffff</span>（即为65,535）；</li>
+    <li>
+        char 数据类型可以储存任何字符；</li>
+    <li>
+        例子：char letter = 'A';。</li>
+</ul></p>
+<h5 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h5><p><del>欸这个转义字符炒鸡友好，换行回车分开有效避免c艹傻逼读入bug</del><br>Java语言支持一些特殊的转义字符序列。<br>  <table class="reference">
+    <tbody>
+        <tr>
+            <th>
+                符号</th>
+            <th>
+                字符含义</th>
+        </tr>
+        <tr>
+            <td>
+                \n</td>
+            <td>
+                换行 (0x0a)</td>
+        </tr>
+        <tr>
+            <td>
+                \r</td>
+            <td>
+                回车 (0x0d)</td>
+        </tr>
+        <tr>
+            <td>
+                \f</td>
+            <td>
+                换页符(0x0c)</td>
+        </tr>
+        <tr>
+            <td>
+                \b</td>
+            <td>
+                退格 (0x08)</td>
+        </tr>
+        <tr>
+            <td>
+                \0</td>
+            <td>
+                空字符 (0x20)</td>
+        </tr>
+     <tr>
+            <td>
+                \s</td>
+            <td>
+                字符串</td>
+        </tr>
+        <tr>
+            <td>
+                \t</td>
+            <td>
+                制表符</td>
+        </tr>
+        <tr>
+            <td>
+                \&quot;</td>
+            <td>
+                双引号</td>
+        </tr>
+        <tr>
+            <td>
+                \&#39;</td>
+            <td>
+                单引号</td>
+        </tr>
+        <tr>
+            <td>
+                \\</td>
+            <td>
+                反斜杠</td>
+        </tr>
+        <tr>
+            <td>
+                \ddd</td>
+            <td>
+                八进制字符 (ddd)</td>
+        </tr>
+        <tr>
+            <td>
+                \uxxxx</td>
+            <td>
+                16进制Unicode字符 (xxxx)</td>
+        </tr>
+    </tbody>
+</table></p>
+<h5 id="11，自动类型转换（好！）"><a href="#11，自动类型转换（好！）" class="headerlink" title="11，自动类型转换（好！）"></a>11，自动类型转换<del>（好！）</del></h5><p><hr></p>
+<p><h2>自动类型转换</h2></p>
+<p><p><b>整型、实型（常量）、字符型数据可以混合运算。运算中，不同类型的数据先转化为同一类型，然后进行运算。</b></p></p>
+<p><p>转换从低级到高级。</p></p>
+<p><pre>
+  低  ------------------------------------&gt;  高
+  byte,short,char&mdash;&gt; int &mdash;&gt; long&mdash;&gt; float &mdash;&gt; double 
+</pre></p>
+<p><p>数据类型转换必须满足如下规则：</p></p>
+<p><ul></p>
+<p><li>不能对boolean类型进行类型转换。</p>
+<p><li>不能把对象类型转换成不相关类的对象。</p>
+<p><li>在把容量大的类型转换为容量小的类型时必须使用强制类型转换。</p>
+<p><li>转换过程中可能导致溢出或损失精度，例如：</p>
+<p><pre>
+int i =128;   
+byte b = (byte)i;
+</pre></p>
+<p><p>因为 byte 类型是 8 位，最大值为127，所以当 int 强制转换为 byte 类型时，值 128 时候就会导致溢出。</p></p>
+<p><li>浮点数到整数的转换是通过舍弃小数得到，而不是四舍五入，例如：  &lt;/p&gt;</p>
+<p><pre>
+(int)23.7 == 23;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(int)-45.89f == -45
+</pre></p>
+<p><li>必须满足转换前的数据类型的位数要低于转换后的数据类型，例如: short数据类型的位数为16位，就可以自动转换位数为32的int类型，同样float数据类型的位数为32，可以自动转换为64位的double类型。</p>
+<h2 id="到此为止"><a href="#到此为止" class="headerlink" title="到此为止"></a>到此为止</h2> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
   id="post-从零开始"
   class="article article-type-post"
   itemscope

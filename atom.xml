@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-21T12:52:44.914Z</updated>
+  <updated>2021-02-06T14:42:25.442Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>杂谈</title>
+    <link href="http://yoursite.com/2021/02/06/%E6%9D%82%E8%B0%88/"/>
+    <id>http://yoursite.com/2021/02/06/%E6%9D%82%E8%B0%88/</id>
+    <published>2021-02-06T14:39:57.000Z</published>
+    <updated>2021-02-06T14:42:25.442Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;小矮子今天辱骂我，好气，择日揍他丫的。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="碎碎念" scheme="http://yoursite.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+    <category term="碎碎念" scheme="http://yoursite.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
