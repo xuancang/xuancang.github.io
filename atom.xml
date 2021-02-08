@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-06T15:24:29.544Z</updated>
+  <updated>2021-02-08T16:17:32.589Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打铁还需自身硬--《西瓜书》学习</title>
+    <link href="http://yoursite.com/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-02-08T16:16:26.000Z</published>
+    <updated>2021-02-08T16:17:32.589Z</updated>
+    
+    
+    
+    
+    <category term="打铁还需自身硬" scheme="http://yoursite.com/categories/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC/"/>
+    
+    
+    <category term="机器学习 西瓜书" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E8%A5%BF%E7%93%9C%E4%B9%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>杂谈</title>
