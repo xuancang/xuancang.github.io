@@ -883,12 +883,61 @@ byte b = (byte)i;
   <entry>
     <title>打铁还需自身硬--《西瓜书》学习</title>
     <url>/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<center><h1>这本书先blocked掉，数学推理太难了</h1></center>
+]]></content>
       <categories>
         <category>打铁还需自身硬</category>
       </categories>
       <tags>
-        <tag>机器学习 西瓜书</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打铁还需自身硬--《度学习框架PyTorch：入门与实践》学习</title>
+    <url>/2021/02/19/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6PyTorch%EF%BC%9A%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5%E3%80%8B%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><center><h1>搭配吴恩达食用</h1></center></p>
+<h1>
+
+[吴恩达part](https://www.coursera.org/learn/machine-learning/home/welcome)
+
+</h1>
+
+<h1 id="WEEK-0X00"><a href="#WEEK-0X00" class="headerlink" title="WEEK 0X00"></a>WEEK 0X00</h1><ul>
+<li><p>1、ML的本质是预测，而对于离散值的预测称之为<b>分类</b>，对于连续值的预测称之为<b>回归</b>。</p>
+</li>
+<li><p>2、任何的ML算法<b>必然</b>有其偏好，否则算法会被其训练集上的假设的“等效性”所迷惑，一般而言，我们称这种偏好为“<b>归纳偏好</b>”，简称“偏好”，归纳偏好与问题的匹配度直接决定了算法的性能。</p>
+</li>
+<li><p>3、对于线性回归函数，我们令</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+    h(x)_\vartheta=\vartheta_0+\vartheta_1x</script><p>为一次线性回归函数，则令</p>
+<script type="math/tex; mode=display">
+    J(\vartheta_0,\vartheta_1)=\frac{1}{2m}\sum_{i=1}^{m}(h_\vartheta(x^{(i)}-y^{(i)})^2
+    \\
+    \underset{\vartheta_1,\vartheta_2}{minmize} \ J(\vartheta_0,\vartheta_1)</script><p>称为平方差代价函数<br></p>
+<p>ps :$\frac{1}{2}$项用于方便计算梯度导数。</p>
+<ul>
+<li><p>4、需要注意的是， $h(x)$是关于$x$的函数,而$J(\vartheta_0,\vartheta_1)$是关于$\vartheta_0,\vartheta_1$的函数</p>
+</li>
+<li><p>5、ML的灵魂：梯度下降法，目的是为了让损失函数$J(\vartheta_0,\vartheta_1,···,\vartheta_n)$取得最小值，基本原理如下</p>
+<script type="math/tex; mode=display">
+  \vartheta_j:=\vartheta_j-\alpha\frac{\partial}{\partial\vartheta_j}J(\vartheta_0,\vartheta_1)</script><p>其中$\alpha$代表学习速率，$\alpha$越大，梯度下降越快。<br>值得注意的是，在对于$\vartheta_0,\vartheta_1,···,\vartheta_n$的更新中，我们要求对于$\vartheta_0,\vartheta_1,···,\vartheta_n$的更新是同步的，例如：</p>
+<script type="math/tex; mode=display">
+tamp_0=\vartheta_0-\alpha\frac{\partial}{\partial\vartheta_0}J(\vartheta_0,\vartheta_1)
+\\
+tamp_1=\vartheta_1-\alpha\frac{\partial}{\partial\vartheta_1}J(\vartheta_0,\vartheta_1)
+\\
+\vartheta_0=tamp_0
+\\
+\vartheta_1=tamp_1</script></li>
+</ul>
+]]></content>
+      <categories>
+        <category>打铁还需自身硬</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>

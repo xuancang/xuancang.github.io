@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Tag: 机器学习 西瓜书 |  
+    打铁还需自身硬--《度学习框架PyTorch：入门与实践》学习 |  
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,55 +44,241 @@
       
     <main class="content on">
       <section class="outer">
-  
-  <article class="articles">
+  <article
+  id="post-打铁还需自身硬-《深度学习框架PyTorch：入门与实践》学习"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">#&nbsp机器学习 西瓜书</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2021" class="archive-year">2021</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  <time datetime="2021-02-08T16:16:26.000Z" itemprop="datePublished">02/09</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/"
-    >打铁还需自身硬--《西瓜书》学习</a> 
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  打铁还需自身硬--《度学习框架PyTorch：入门与实践》学习
+</h1>
  
 
     </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E8%A5%BF%E7%93%9C%E4%B9%A6/" rel="tag">机器学习 西瓜书</a></li></ul>
-
-    
+     
+    <div class="article-meta">
+      <a href="/2021/02/19/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6PyTorch%EF%BC%9A%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5%E3%80%8B%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time datetime="2021-02-19T14:47:38.000Z" itemprop="datePublished">2021-02-19</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC/">打铁还需自身硬</a>
   </div>
-</article>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">358</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">1 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
       
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><center><h1>搭配吴恩达食用</h1></center></p>
+<h1>
+
+[吴恩达part](https://www.coursera.org/learn/machine-learning/home/welcome)
+
+</h1>
+
+<h1 id="WEEK-0X00"><a href="#WEEK-0X00" class="headerlink" title="WEEK 0X00"></a>WEEK 0X00</h1><ul>
+<li><p>1、ML的本质是预测，而对于离散值的预测称之为<b>分类</b>，对于连续值的预测称之为<b>回归</b>。</p>
+</li>
+<li><p>2、任何的ML算法<b>必然</b>有其偏好，否则算法会被其训练集上的假设的“等效性”所迷惑，一般而言，我们称这种偏好为“<b>归纳偏好</b>”，简称“偏好”，归纳偏好与问题的匹配度直接决定了算法的性能。</p>
+</li>
+<li><p>3、对于线性回归函数，我们令</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+    h(x)_\vartheta=\vartheta_0+\vartheta_1x</script><p>为一次线性回归函数，则令</p>
+<script type="math/tex; mode=display">
+    J(\vartheta_0,\vartheta_1)=\frac{1}{2m}\sum_{i=1}^{m}(h_\vartheta(x^{(i)}-y^{(i)})^2
+    \\
+    \underset{\vartheta_1,\vartheta_2}{minmize} \ J(\vartheta_0,\vartheta_1)</script><p>称为平方差代价函数<br></p>
+<p>ps :$\frac{1}{2}$项用于方便计算梯度导数。</p>
+<ul>
+<li><p>4、需要注意的是， $h(x)$是关于$x$的函数,而$J(\vartheta_0,\vartheta_1)$是关于$\vartheta_0,\vartheta_1$的函数</p>
+</li>
+<li><p>5、ML的灵魂：梯度下降法，目的是为了让损失函数$J(\vartheta_0,\vartheta_1,···,\vartheta_n)$取得最小值，基本原理如下</p>
+<script type="math/tex; mode=display">
+  \vartheta_j:=\vartheta_j-\alpha\frac{\partial}{\partial\vartheta_j}J(\vartheta_0,\vartheta_1)</script><p>其中$\alpha$代表学习速率，$\alpha$越大，梯度下降越快。<br>值得注意的是，在对于$\vartheta_0,\vartheta_1,···,\vartheta_n$的更新中，我们要求对于$\vartheta_0,\vartheta_1,···,\vartheta_n$的更新是同步的，例如：</p>
+<script type="math/tex; mode=display">
+tamp_0=\vartheta_0-\alpha\frac{\partial}{\partial\vartheta_0}J(\vartheta_0,\vartheta_1)
+\\
+tamp_1=\vartheta_1-\alpha\frac{\partial}{\partial\vartheta_1}J(\vartheta_0,\vartheta_1)
+\\
+\vartheta_0=tamp_0
+\\
+\vartheta_1=tamp_1</script></li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
       
     </div>
-  </div>
-  
-  
+    
 
-  
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2021/02/19/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6PyTorch%EF%BC%9A%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5%E3%80%8B%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/02/09/%E6%89%93%E9%93%81%E8%BF%98%E9%9C%80%E8%87%AA%E8%BA%AB%E7%A1%AC-%E3%80%8A%E8%A5%BF%E7%93%9C%E4%B9%A6%E3%80%8B%E5%AD%A6%E4%B9%A0/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">打铁还需自身硬--《西瓜书》学习</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "sVwHTgTvWMVAl4f1Y5fCcC83-gzGzoHsz",
+    app_key: "TMdxhmOctIwTl6UCIxr1XzXr",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -227,6 +413,23 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
